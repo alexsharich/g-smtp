@@ -5,13 +5,7 @@ const bodyParser = require('body-parser')
 
 const app = express()
 
-const corsOptions ={
-    origin:'*', 
-    credentials:true,          
-    optionSuccessStatus:200,
- }
- 
- app.use(cors(corsOptions))
+app.use(cors())
 
 let smtp_login = process.env.SMTP_LOGIN || '---'
 let smtp_password = process.env.SMTP_PASSWORD || '---'
