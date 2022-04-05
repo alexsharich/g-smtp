@@ -32,14 +32,13 @@ app.post('/sendMessage', async function (req, res) {
         from: 'My portfolio cv',
         to: "alexandev444@gmail.com",
         subject: "HR wants me",
-        //text: "Text",
         html: `<b>Сообщение с вашего портфолио</b>
     <div>
        name:${name}
     </div>
     <div>
        message:${message}
-    </div>`,
+    </div>`
     });
 
     res.send('ok')
