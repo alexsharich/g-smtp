@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "SET PORT=8765 && node index.js"
+    "start": "SET PORT='https://smtp-nodejs-server-mail.herokuapp.com/' && node index.js"
   },
   "author": "",
   "license": "ISC",
