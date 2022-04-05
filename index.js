@@ -22,7 +22,7 @@ let transporter = nodemailer.createTransport({
     },
 });
 
-app.get('/', function (req, res) {
+app.get('/test', function (req, res) {
     res.send('Hello World!')
 })
 app.post('/sendMessage', async function (req, res) {
